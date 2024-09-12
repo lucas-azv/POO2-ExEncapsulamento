@@ -1,17 +1,17 @@
 public abstract class Cliente {
     private String nome;
 
-    public Cliente(String nome) {
+    protected Cliente(String nome) {
         this.nome = nome;
     }
 
-    public String getNome() {
+    protected String getNome() {
         return nome;
     }
 
-    public void setNome(String nome) {
+    protected void setNome(String nome) {
         this.nome = nome;
     }
 
-    public abstract double aplicarDesconto();
+    protected abstract double aplicarDesconto();
 }
